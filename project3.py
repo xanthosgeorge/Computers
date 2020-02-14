@@ -5,7 +5,7 @@ while True:
     x=input("Επιθυμήτε να σταματήσετε τη διαδικασία πρόσθεσης ?? \n")
     if (x=="yes"):
         break
-#Δημιουργεία λίστας με τις τιμές του Dictionary
+#Δημιουργία λίστας με τις τιμές του Dictionary
 listapragmatwn_list=list(listapragmatwn.values())
 print(listapragmatwn_list)
 s=0

@@ -8,6 +8,6 @@ for i in range(0,len(words)):
         #Cutting the first letter
         tomi = words[i][:-(len(words[i])-1)]
         #print(tomi)
-        #we put all the letters tohether
+        #we put all the letters together
         prosthiki = words[i][1:] +tomi +"ay"
         print(prosthiki)
