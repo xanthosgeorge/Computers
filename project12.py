@@ -1,9 +1,11 @@
 import datetime
 x = datetime.datetime.now()
 givendate = input("Δώστε μια ημερομηνία σε μορφή ΗΗ\ΜΜ\ΕΕΕΕ")
+# Κάνουμε ακέραιες μεταβλητες μερη του input
 givendate_year = int(givendate[6:10])
 givendate_month = int(givendate[3:5])
 givendate_day = int(givendate[0:2])
+#Με τη χρήση module καθορίζουμε την τωρινη ημερομηνια και με συναρτήσεις κάνουμε την αφαίρεση ανάμεσα στις δύο ημερομηνίες
 someday = datetime.date(givendate_year,givendate_month,givendate_day)
 today = datetime.date(x.year,x.month,x.day)
 dif = today - someday
@@ -12,6 +14,7 @@ print (abs(dif.days),"μέρες")
 print (x.hour , "ώρες")
 print (x.minute , "λεπτά")
 print (x.second , "δευτερόλεπτα")
+# Αλγόριθμος εύρεσης δίσεκτου έτους
 if givendate_month==2:
     if givendate_year%4==0:
         if givendate_year%100==0:
