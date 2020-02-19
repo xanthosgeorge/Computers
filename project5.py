@@ -1,13 +1,13 @@
 f = open("project.txt", "r")
-# file open
+# Άνοιγμα αρχείου
 words = f.read()
 words = words.split()
 print (words)
 for i in range(0,len(words)):
     if len(words[i])>3:
-        #Cutting the first letter
+        # Αφαίρεση πρώτου γράμματος
         tomi = words[i][:-(len(words[i])-1)]
         #print(tomi)
-        #we put all the letters together
+        # Βάζουμε τα γράμματα όπως τα ζητάει η εκφώνηση
         prosthiki = words[i][1:] +tomi +"ay"
         print(prosthiki)
