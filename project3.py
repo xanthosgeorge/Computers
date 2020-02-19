@@ -7,7 +7,6 @@ while True:
         break
 #Δημιουργία λίστας με τις τιμές του Dictionary
 listapragmatwn_list=list(listapragmatwn.values())
-print(listapragmatwn_list)
 s=0
 #Υπολογσιμός του συνολικού κόστους 
 for i  in range(0,len(listapragmatwn_list)):
